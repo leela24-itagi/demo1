@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mypromise=new Promise((res,rej)=>{
+            setTimeout(()=>{
+            
+            if(5<3){
+                res("this is resolved")
+            } else { 
+                rej("this is rejected")
+            }
+
+        },5000);
+    })
+     async function processpromise(){
+       await mypromise.then((res)=>console.log(res)
+    ).catch((rej)=>console.log(rej)
+    )
+    console.log('data proceeded');
+    }
+    processpromise()
+    
+        console.log(mypromise);
+        mypromise.then((res)=>console.log(res)
+    ).catch((rej)=>console.log(rej))
+        
+        
+    </script>
+</body>
+</html>

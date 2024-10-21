@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(background.avif);
+            background-size: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width:400px ;
+            height:450px;
+            border:6px solid blue ;
+            background: transparent;
+            backdrop-filter: blur(9px);
+            border-radius: 20px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h2{
+            color:white;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 10px;
+            align-content: center;
+            justify-content: center;
+        }
+        .inputbox{
+            width: 100px;
+            position: relative;
+             margin-top: 10px;
+             color:white;
+            border-bottom:2px solid white
+        }
+        .input label{
+            position: absolute;
+            top: 0px;
+            left:0px;
+            color: white;
+            font-size: 1.2em;
+            transition: 1s;
+        }
+        .inputbox input{
+            width: 100px;
+            height: 50px;
+            padding: 30px 0px 15px;
+            border: none;
+            outline: none;
+            background: transparent;
+
+        }
+        input:focus~label{
+            top: -20px;
+
+        }
+        .forgot{
+            display: flex;
+            justify-content:space-between;
+        }
+        .forgot label{
+            color: white;
+        }
+        .forgot a{
+            text-decoration:none;
+            color: white;
+        }
+        button{
+            width: 300px;
+            height: 30px;
+            margin-top:20px ;
+            border-radius: 15px;
+
+        }
+        form{
+            width: 300px;
+        }
+           .register p,a{
+            color: white;
+            font-size: medium;
+            margin-top: 20px;
+            text-align: center;
+            
+
+           }
+    </style>
+</head>
+<body>
+     <div class="box"> 
+     <form action="">
+        <h2>LOGIN</h2>
+        <div class="inputbox">
+        <input type="email" name="email">
+        <label for="email" class="label">EMAIL</label>
+        </div>
+         <div class="inputbox">
+        <input type="password" name="password">
+        <label for="password" class="label">PASSWORD</label>
+        </div>
+        <div>
+            <div class="forgot">
+                <label for="">
+                <input type="checkbox">Remember me
+                </label>
+                <label for="">
+                 <a href="">Forgot password</a>
+                </label>
+            </div>
+        </div>
+        <button>LOGIN</button>
+        <div class="register">
+            <p>Don't have an account?<a href="">register</a>
+
+        </div>
+     </form>
+</body>
+</html>

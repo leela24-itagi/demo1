@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Netflix FAQ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: black;
+      color: white;
+      background-image: url(blk.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position :center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0px;
+      padding: 10px;  
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #504d4d;
+      padding-bottom: 15px;
+    }
+
+    .faq-question {
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-answer {
+      margin-top: 10px;
+      display: none; 
+    }
+
+    .faq-answer.active{
+      display: block; 
+    }
+    .plus-icon {
+      font-size: 20px;
+      display: flex;
+      width: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item">
+      <div class="faq-question">
+        What is Netflix?
+        <span class="plus-icon">+</span>
+      </div>
+      <div class="faq-answer">
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        How much does Netflix cost?
+        <span class="plus-icon">+</span>
+      </div>
+      <div class="faq-answer">
+    </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">
+          Where can I watch?
+          <span class="plus-icon">+</span>
+        </div>
+        <div class="faq-answer">
+      </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+         How do I cancel?
+          <span class="plus-icon">+</span>
+        </div>
+        <div class="faq-answer"> 
+      </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          What can I watch on netflix?
+          <span class="plus-icon">+</span>
+        </div>
+        <div class="faq-answer">  
+      </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+            Is Netflix good for kid?
+          <span class="plus-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          
+      </div>
+  
+      </div>
+
+  <script>
+    
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+
+      question.addEventListener('click', () => {
+        answer.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun1()">onclick</button>
+    <button ondbclick="fun2()">ondbclick</button>
+    <button onmouseenter="fun3()">onmouseenter</button>
+    <button onmouseleave="fun4()">onmouseleave</button>
+    <button onmouseup="fun5()">onmouseup</button>
+    <br>
+    <h1> hello</h1>
+    <label> name <input type="text" onfocus="focus()" class="int">
+       <input type="submit" ></label>
+       <script>
+        function fun1(){
+            console.log("btn on click");
+        }
+        function fun2(){
+            console.log("btn on double click");
+        }
+        function fun3(){
+            console.log("on mouse enter");
+        }
+        function fun4(){
+            console.log("btn mouse leave");
+        }
+        function fun5(){
+            console.log("btn mouse up");
+        }
+       </script>
+</body>
+</html>

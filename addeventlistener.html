@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>this is div</div>
+    <script>
+        let div=document.querySelector('div')
+        function eventhandler(){
+            console.log("this function handled by event listener");
+        }
+        let event='click'
+        div.addEventListener('click',function(){
+            console.log("this div is clicked");
+            
+        });
+        let str='hello'
+        console.log(str.includes("  "));
+        
+    </script>
+</body>
+</html>
